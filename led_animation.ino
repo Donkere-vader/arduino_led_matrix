@@ -1,9 +1,22 @@
+int dly = 1000;
+
+const int frames = 10;
+int  dimensions[ 2 ] = {10, 10};
+const int animation_int = 84038609738104008783890294379029755033105355230505388558706789286310102163475578464421318125408039128544700402342436724176923594956171312875071077686490826861287114341497985446592204824785069852515827882331228121007467534739618361606098962619896746861957305200985101424942654564190257536481982677000;
+
+int load_animation(frames, dimensions, animation_int) {
+  return {10, 10};
+}
+
 void setup() {
   // put your setup code here, to run once:
-  
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  
+  // Flip the builtin led every 100 ms
+  analogWrite(LED_BUILTIN, 0);
+  delay(dly);
+  analogWrite(LED_BUILTIN, 255);
+  delay(dly);
 }
